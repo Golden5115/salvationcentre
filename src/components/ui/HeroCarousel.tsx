@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, Variants } from 'framer-motion'
 import { Calendar, PlayCircle, ChevronDown } from 'lucide-react'
 
 const slides = [
@@ -26,7 +26,7 @@ const slides = [
 ]
 
 // Framer Motion Variants
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -39,13 +39,13 @@ const containerVariants = {
     opacity: 0,
     transition: {
       staggerChildren: 0.1,
-      staggerDirection: -1 as const,
+      staggerDirection: -1,
       duration: 0.4,
     },
   },
 }
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, x: -150 },
   visible: {
     opacity: 1,
@@ -59,7 +59,7 @@ const itemVariants = {
   },
 }
 
-const lineVariants = {
+const lineVariants: Variants = {
   hidden: { scaleX: 0, opacity: 0, originX: 0 },
   visible: {
     scaleX: 1,
