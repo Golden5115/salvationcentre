@@ -2,6 +2,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Lora, Teko } from 'next/font/google'
 import { Toaster } from 'sonner'
+// @ts-ignore
 import '@/app/globals.css'
 
 import { Navigation } from '@/components/navigation'
