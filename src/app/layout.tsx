@@ -2,7 +2,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Lora, Teko } from 'next/font/google'
 import { Toaster } from 'sonner'
-import './globals.css'
+import '@/app/globals.css'
 
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
