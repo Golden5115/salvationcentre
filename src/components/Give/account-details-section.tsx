@@ -15,7 +15,7 @@ export default function AccountDetailsSection() {
       { currency: "GBP", code: "5060474567" },
     ],
     naira: {
-      accountName: "RCVG Salvation Centre",
+      accountName: "RCCG Salvation Centre",
       accountNumber: "1010593681",
     },
   }
@@ -111,7 +111,7 @@ export default function AccountDetailsSection() {
 
                   {copied === acc.currency && (
                     <p className="text-center mt-4 text-sm font-bold animate-pulse">
-                      God bless you abundantly! 
+                      God bless you abundantly!
                     </p>
                   )}
                 </div>
@@ -184,7 +184,7 @@ export default function AccountDetailsSection() {
                   </div>
                   {copied === "naira" && (
                     <p className="mt-6 text-xl font-bold animate-pulse">
-                      Copied! Your harvest is coming! 
+                      Copied! Your harvest is coming!
                     </p>
                   )}
                 </div>
